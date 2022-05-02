@@ -14,12 +14,12 @@ def contatos():
 
 @app.route("/usuarios/<nome_usuario>")#O que escrever vai aparecer na tela
 def usuarios(nome_usuario):
-    return render_template("usuarios.html", nome_usuario = nome_usuario)
+    return render_template("usuarios.html", nome_usuario=nome_usuario)
 
 # colocar o site no ar
 if __name__ == "__main__":
     app.run(debug=True)#Colocar o site no ar, Debug == True é ativar o debug, toda alteração ele já altera automaticamente
 
 # servidor do heroku - Totalmente Gratuito
-#Configurar o procfile
-#requirements
+# Configurar o procfile
+# requirements
